@@ -1,0 +1,21 @@
+# Glogal .gitingore
+
+# Eclipse related files
+.settings
+.classpath
+.project
+
+# InteliJ
+worskpace.xml
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Build
+target/
+
+# NPM
+node_modules/
+npm-debug.log
