@@ -15,6 +15,7 @@ worskpace.xml
 
 # Build
 target/
+dist/
 
 # NPM
 node_modules/

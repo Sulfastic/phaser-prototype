@@ -3,16 +3,28 @@
   "version": "1.0.0",
   "main": "./Project/index.html",
   "description": "Prototype phaser project",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sulfastic/phaser-prototype.git"
+  },
   "scripts": {
-    "start": "node ./Project/index.js",
-    "desktop": "nodewebkit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "grunt connect:example",
+    "clean": "rm -rf dist",
+    "dist": "mkdir dist",
+    "copy": "cp -R src/* dist/",
+    "build": "npm run clean && npm run dist && npm run copy",
+    "test": "echo \"No tests yet :P\" && exit 0"
   },
   "author": "Sulf",
   "license": "ISC",
   "dependencies": {
-    "nodewebkit": "^0.11.6",
     "requirejs": "^2.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-connect": "^0.2.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
 }
