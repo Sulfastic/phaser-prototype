@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     connect: {
       example: {
         port: 11111,
-        base: 'Project'
+        base: 'src'
       }
     },
     uglify: {
