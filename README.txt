@@ -1,6 +1,6 @@
-to run project in desktop mode, type:
+In case of performing fresh install of application type:
 
-npm run desktop
+npm install
 
 to run project in browser mode, type:
 
